@@ -1,0 +1,24 @@
+name: SansSMP
+version: 1.1.0
+main: fr.sanssmp.SansSMP
+api-version: '1.21'
+author: SansSMP
+description: Epees custom, objets legendaires et rituel pour le Sans SMP.
+
+commands:
+  rituel:
+    description: Lance un rituel, ou /rituel stop pour annuler.
+    usage: /rituel [objet|stop]
+    permission: sanssmp.rituel
+  epee:
+    description: Donne un objet custom a un joueur.
+    usage: /epee <dash|foudre|glace|vampire|vide|explosive|ocean|catch|masse> [joueur]
+    permission: sanssmp.epee
+
+permissions:
+  sanssmp.rituel:
+    description: Permet de lancer/annuler un rituel.
+    default: op
+  sanssmp.epee:
+    description: Permet de se donner des objets custom.
+    default: op
